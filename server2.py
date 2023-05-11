@@ -41,12 +41,12 @@ while True:
         file_content = file.read()
 
         # Buat HTTP response message dengan header dan konten file yang diminta
-        if file_path.endswith('.html'):
-            content_type = 'text/html'
-        elif file_path.endswith('.jpg'):
+        if file_path.endswith('.jpg'):
             content_type = 'image/jpeg'
         elif file_path.endswith('.png'):
             content_type = 'image/png'
+        else:
+            content_type = 'text/html'
 
         response = "HTTP/1.1 200 OK\r\nContent-Type: " + content_type + "\r\n\r\n"
 
