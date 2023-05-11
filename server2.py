@@ -45,6 +45,10 @@ while True:
             content_type = 'image/jpeg'
         elif file_path.endswith('.png'):
             content_type = 'image/png'
+        elif file_path.endswith('.gif'):
+            content_type = 'image/gif'
+        elif file_path.endswith('.txt'):
+            content_type = 'text/plain'
         else:
             content_type = 'text/html'
 
